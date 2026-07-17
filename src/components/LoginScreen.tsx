@@ -80,13 +80,6 @@ export const LoginScreen: React.FC = () => {
             />
           </div>
 
-          {!isSignUp && (
-            <div className="mt-2 text-xs text-slate-400 bg-slate-50 border border-slate-100 p-3 rounded-xl flex flex-col gap-1 text-center">
-              <span className="font-semibold text-slate-500">Credenciais de teste padrão:</span>
-              <span>E-mail: <strong className="text-slate-600">admin@taskflow.com</strong></span>
-              <span>Senha: <strong className="text-slate-600">admin123</strong></span>
-            </div>
-          )}
 
           {error && (
             <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-red-50 border border-red-100 text-red-600 text-sm font-medium">
