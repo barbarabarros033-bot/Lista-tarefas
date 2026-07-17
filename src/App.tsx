@@ -5,10 +5,10 @@ import { LoginScreen } from './components/LoginScreen';
 import { TaskListTab } from './components/TaskListTab';
 import { AnalyticsTab } from './components/AnalyticsTab';
 import { CalendarTab } from './components/CalendarTab';
-import { CheckSquare, ArrowRight, UserCheck } from 'lucide-react';
+
 
 const MainAppContent: React.FC = () => {
-  const { user, login, activeTab } = useTasks();
+  const { user, activeTab } = useTasks();
 
 
 

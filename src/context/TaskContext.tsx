@@ -192,7 +192,7 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     try {
       // 2. Tentar criar conta no Supabase
-      const { data, error } = await supabase.auth.signUp({ email: trimmedEmail, password: trimmedPassword });
+      const { error } = await supabase.auth.signUp({ email: trimmedEmail, password: trimmedPassword });
       if (error) {
         console.warn('Erro ao cadastrar no Supabase (será usado fallback local):', error.message);
       }

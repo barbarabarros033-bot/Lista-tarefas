@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
                   </div>
                   <div className="text-left">
                     <p className="text-xs text-slate-400 font-medium">Conta ativa</p>
-                    <p className="text-sm text-slate-700 font-semibold leading-3">{user.name}</p>
+                    <p className="text-sm text-slate-700 font-semibold leading-3">{user.email}</p>
                   </div>
                 </div>
               )}
@@ -120,7 +120,7 @@ export const Navbar: React.FC = () => {
                   <User className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-slate-800 font-semibold">{user.name}</p>
+                  <p className="text-sm text-slate-800 font-semibold">{user.email}</p>
                   <p className="text-xs text-slate-500">{user.email}</p>
                 </div>
               </div>

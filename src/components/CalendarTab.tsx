@@ -4,7 +4,7 @@ import type { Task, Category, Priority } from '../types';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, ClipboardList, Clock, CheckCircle, Pencil, Moon } from 'lucide-react';
 
 export const CalendarTab: React.FC = () => {
-  const { tasks } = useTasks();
+  const { tasks, toggleDarkMode, toggleTaskComplete, updateTask } = useTasks();
   
   // Estado para o Mês e Ano exibidos
   const [currentDate, setCurrentDate] = useState(new Date());
